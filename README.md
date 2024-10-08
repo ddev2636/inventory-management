@@ -174,13 +174,14 @@ A full-stack inventory management system that allows users to track products, ma
   pm2 monit
   ```
 
-## RDS PostgreSQL Connection String
+## RDS PostgreSQL 
 
 To connect to your RDS PostgreSQL database, you will need to set up a connection string in your environment variables. The connection string format is as follows:
 
 ```plaintext
 DATABASE_URL="postgresql://<username>:<password>@<hostname>:<port>/<database_name>?schema=<schema>"
 ```
+remember to set the password only in alphanumeric format otherwise exceptions may occur
 
 
 
