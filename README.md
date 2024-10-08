@@ -13,10 +13,13 @@ A full-stack inventory management system that allows users to track products, ma
 - Client: Next.js, React, TailwindCSS
 - Server: Node.js, Prisma, PostgreSQL
 - Database: PostgreSQL
-- Production : AWS, EC2, S3, RDS
+- Production : AWS, EC2, S3, RDS ,Amplify
 
 ## DataModelling
 ![Schema Relations](server/assets/schema-relations.jpg)
+
+## AWS Architecture
+![Diagram](server/assets/AWS-architecture.jpg)
 
 
 
