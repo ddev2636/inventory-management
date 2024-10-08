@@ -172,3 +172,22 @@ A full-stack inventory management system that allows users to track products, ma
   ```
 
 
+
+## S3 Bucket Policy
+
+To allow public read access to the objects in your S3 bucket, you can use the following bucket policy:
+
+```json
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "PublicReadGetObject",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "s3:GetObject",
+            "Resource": "[bucket-arn]/*"
+        }
+    ]
+}
+```
