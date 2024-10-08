@@ -26,6 +26,12 @@ jobs:
             #check
             ls -a
 
+            cd ..
+            cd ..
+            cd root 
+
+            ls -a
+
             # Navigate to your application directory
             cd inventory-management         
 
