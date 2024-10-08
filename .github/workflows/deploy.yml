@@ -23,11 +23,12 @@ jobs:
             # Switch to superuser
             sudo su -
 
+            # Pull the latest changes from the repository
+            git pull origin main  # Ensure this matches your main branch
+
             # Navigate to your application directory
             cd inventory-management  # Change to your application path            
 
-            # Pull the latest changes from the repository
-            git pull origin main  # Ensure this matches your main branch
 
             # Navigate to server directory
             cd server
