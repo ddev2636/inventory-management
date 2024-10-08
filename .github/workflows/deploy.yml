@@ -21,13 +21,16 @@ jobs:
           key: ${{ secrets.EC2_PRIVATE_KEY }} # Your SSH private key
           script: |
             # Switch to superuser
-            sudo su -            
+            sudo su -  
+
+            #check
+            ls -a
 
             # Navigate to your application directory
-            cd inventory-management  # Change to your application path            
+            cd inventory-management         
 
             # Pull the latest changes from the repository
-            git pull origin main  # Ensure this matches your main branch
+            git pull origin main
 
             # Navigate to server directory
             cd server
