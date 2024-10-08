@@ -82,7 +82,7 @@ const Sidebar = () => {
         }`}
       >
         <Image
-          src={`${process.env.NEXT_PUBLIC_API_S3_HOSTNAME}/logo.jpg`}
+          src={`https://${process.env.NEXT_PUBLIC_API_S3_HOSTNAME}/logo.png`}
           alt="devstock-logo"
           width={27}
           height={27}
@@ -93,7 +93,7 @@ const Sidebar = () => {
             isSidebarCollapsed ? "hidden" : "block"
           } font-extrabold text-2xl`}
         >
-          EDSTOCK
+          DEVSTOCK
         </h1>
 
         <button
@@ -146,7 +146,9 @@ const Sidebar = () => {
 
       {/* FOOTER */}
       <div className={`${isSidebarCollapsed ? "hidden" : "block"} mb-10`}>
-        <p className="text-center text-xs text-gray-500">&copy; 2024 Edstock</p>
+        <p className="text-center text-xs text-gray-500">
+          &copy; 2024 devstock
+        </p>
       </div>
     </div>
   );
