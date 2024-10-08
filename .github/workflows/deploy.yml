@@ -17,8 +17,8 @@ jobs:
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.EC2_HOST }} # Your EC2 instance public IP or hostname
-          username: ${{ secrets.EC2_USER_NAME }} # Change if your user is different
-          key: ${{ secrets.EC2_SSH_PRIVATE_KEY }} # Your SSH private key
+          username: ${{ secrets.EC2_USERNAME }} # Change if your user is different
+          key: ${{ secrets.EC2_PRIVATE_KEY }} # Your SSH private key
           script: |
             # Switch to superuser
             sudo su -
