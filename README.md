@@ -16,7 +16,7 @@ A full-stack inventory management system that allows users to track products, ma
 - Production : AWS, EC2, S3, RDS
 
 ## DataModelling
-![Schema Relations](server/assets/schema-relations)
+![Schema Relations](server/assets/schema-relations.jpg)
 
 
 
