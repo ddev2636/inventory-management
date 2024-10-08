@@ -161,18 +161,27 @@ A full-stack inventory management system that allows users to track products, ma
 
 - Delete all processes:
   ```bash
-  pm2 status
+  pm2 delete all
   ```
 
 - status of processes:
   ```bash
-  pm2 stop all
+  pm2 status
   ```
 
 - Monitor processes:
   ```bash
   pm2 monit
   ```
+
+## RDS PostgreSQL Connection String
+
+To connect to your RDS PostgreSQL database, you will need to set up a connection string in your environment variables. The connection string format is as follows:
+
+```plaintext
+DATABASE_URL="postgresql://<username>:<password>@<hostname>:<port>/<database_name>?schema=<schema>"
+```
+
 
 
 
